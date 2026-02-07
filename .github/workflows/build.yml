@@ -30,3 +30,9 @@ jobs:
         with:
           name: BallPitWallpaper
           path: app/build/outputs/apk/debug/app-debug.apk
+     
+      - name: Debug wrapper
+        run: |
+         ls -l gradle/wrapper
+          chmod +x gradlew
+         ./gradlew --version
